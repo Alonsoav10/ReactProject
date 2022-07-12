@@ -13,9 +13,9 @@ function App() {
     <div className="App">
       
       <NavBar/> 
-     <ItemListContainer greeting='Hola soy ItemListContainer'/>
+     <ItemListContainer/>
     </div>
-  );
+  ); 
 }
 
 export default App;
