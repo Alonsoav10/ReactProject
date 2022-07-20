@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import ItemList from './ItemList'
 import ItemCount from './ItemCount'
+import ItemDetail from '../ItemDetail/ItemDetail'
 
 import zap1 from '../../images/zap1.webp'
 import zap2 from '../../images/zap2.webp'
@@ -17,11 +18,16 @@ const ItemListContainer = () => {
 
     const productos = [
         {id: 1, name: 'Air Force 1', price: 100, stock: 10, image: zap1},
-        {id: 2, name: 'Air Force 1 blanco con negro', price: 100, stock: 15, image: zap2},
+        {id: 2, name: 'Air Force 1 B/N', price: 100, stock: 15, image: zap2},
         {id: 3, name: 'Air Force 1 negras', price: 100, stock: 20, image: zap3},
         {id: 4, name: 'Air Max', price: 100, stock: 20, image: zap4},
         {id: 5, name: 'Air Force 1 negras', price: 100, stock: 20, image: zap5},
         {id: 6, name: 'Air Force 1 negras', price: 100, stock: 20, image: zap6},
+        {id: 6, name: 'Air Force 1 negras', price: 100, stock: 20, image: zap6},
+        {id: 6, name: 'Air Force 1 negras', price: 100, stock: 20, image: zap6},
+        {id: 6, name: 'Air Force 1 negras', price: 100, stock: 20, image: zap6},
+        {id: 6, name: 'Air Force 1 negras', price: 100, stock: 20, image: zap6},
+
     ]
 
     const task = new Promise ((resolve, reject) => {
@@ -51,6 +57,8 @@ const ItemListContainer = () => {
         <div style={{ textAlign: 'center', marginTop: 200 }}>
             {loading ? <h1>Loading...</h1>: <ItemList items={items}/>}            
             <ItemCount initial={1} stock={10} onAdd={onAdd}/>
+            <br />
+            <ItemDetail/>
         </div>
     )
 }

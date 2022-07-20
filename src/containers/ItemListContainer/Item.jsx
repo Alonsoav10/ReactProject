@@ -2,6 +2,7 @@ import React from 'react'
 import {Button} from 'react-bootstrap'
 import {Card} from 'react-bootstrap'
 
+
 const Item = ({item}) => {
   const {name, price, stock, image} = item
 
@@ -14,6 +15,7 @@ const Item = ({item}) => {
               <p>Precio: {price}</p>
               <p>stock: {stock}</p>
             </Card.Text>
+            
             <Button variant="primary">Ver mas</Button>
           </Card.Body>
         </Card>

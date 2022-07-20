@@ -24,7 +24,6 @@ const NavBar =()=> {
             </Nav>
             <Nav>
             <CarIcon />
-            <ProfileIcon />
             </Nav>
         </Navbar.Collapse>
         </Container>
