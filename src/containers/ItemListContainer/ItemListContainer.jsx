@@ -13,7 +13,8 @@ import zap5 from '../../images/zap5.webp'
 import zap6 from '../../images/zap6.webp'
 
 const ItemListContainer = () => {
-    const [items, setItems] = useState([])
+    
+    const [items, setItems] = useState({})
     const [loading, setLoading] = useState(true) 
 
     const productos = [
@@ -56,9 +57,9 @@ const ItemListContainer = () => {
     return (
         <div style={{ textAlign: 'center', marginTop: 200 }}>
             {loading ? <h1>Loading...</h1>: <ItemList items={items}/>}            
-            <ItemCount initial={1} stock={10} onAdd={onAdd}/>
+            
             <br />
-            <ItemDetail/>
+            
         </div>
     )
 }

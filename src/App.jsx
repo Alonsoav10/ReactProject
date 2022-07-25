@@ -7,6 +7,7 @@ import ItemListContainer from './containers/ItemListContainer/ItemListContainer'
 //Estilos se colocan abajo
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ItemDetailContainer from './containers/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       
       <NavBar/> 
      <ItemListContainer/>
+     <ItemDetailContainer/>
     </div>
   ); 
 }
