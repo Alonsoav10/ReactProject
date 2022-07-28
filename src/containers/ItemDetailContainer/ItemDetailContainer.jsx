@@ -20,7 +20,7 @@ function ItemDetailContainer() {
         {id: 3, name: 'Air Force 1 negras', price: 100, stock: 20, image: zap3},
         {id: 4, name: 'Air Max', price: 100, stock: 20, image: zap4},
         {id: 5, name: 'Air Force 1 negras', price: 100, stock: 20, image: zap5},
-        {id: 6, name: 'Air Force 1 negras', price: 100, stock: 20, image: zap6},
+        {id: 6, name: 'Air Force 1 negras', price: 300, stock: 20, image: zap6},
         {id: 6, name: 'Air Force 1 negras', price: 100, stock: 20, image: zap6},
         {id: 6, name: 'Air Force 1 negras', price: 100, stock: 20, image: zap6},
         {id: 6, name: 'Air Force 1 negras', price: 100, stock: 20, image: zap6},
